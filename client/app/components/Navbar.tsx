@@ -29,34 +29,34 @@ function Navbar() {
                     </div>
                     <ul className="items-start hidden gap-5 font-medium md:flex">
                         <Link onClick={() => scrollTo(0, 0)} href={"/"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Home</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Home</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <Link onClick={() => scrollTo(0, 0)} href={"/cabanas"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Cabanas</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Cabanas</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <Link onClick={() => scrollTo(0, 0)} href={"/experiences"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Experiences</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Experiences</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/gallery"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Gallery</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Gallery</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200 " />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/about"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">About</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">About</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200 " />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/contact"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-secondary hover:-translate-y-1 hover:scale-110 hover:text-secondary-50"> Contact</li>
+                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50"> Contact</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <div>
-                            <p onClick={() => router.push('/booking')} className='px-3 py-2 bg-secondary text-white hover:bg-hoverSecondary rounded-lg cursor-pointer text-xs '>Book Now</p>
+                            <p onClick={() => router.push('/booking')} className='px-3 py-2 bg-accent text-white hover:bg-secondary rounded-lg cursor-pointer text-xs '>Book Now</p>
                         </div>
                     </ul>
                     {/*Menu Icon ------------------------------------------------------------------------------------------------*/}
@@ -94,7 +94,7 @@ function Navbar() {
                                 <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                             </Link>
                             <div>
-                                <p onClick={() => router.push('/booking')} className='px-4 py-2 bg-secondary text-white hover:bg-hoverSecondary rounded-lg cursor-pointer text-sm '>Book Now</p>
+                                <p onClick={() => router.push('/booking')} className='px-4 py-2 bg-accent text-white hover:bg-secondary rounded-lg cursor-pointer text-sm '>Book Now</p>
                             </div>
 
                         </ul>
