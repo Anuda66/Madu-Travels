@@ -5,7 +5,6 @@ import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-
 function Navbar() {
     // const navigate = useNavigate();
     const [showMenu, setShowMenu] = React.useState(false)

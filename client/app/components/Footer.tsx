@@ -10,7 +10,7 @@ import { SiMinutemailer } from "react-icons/si";
 function Footer() {
   return (
     <div>
-      <footer className="-mb-10 bg-footer">
+      <footer className="-mb-10 bg-dark_neutral">
         <div className="py-12 mx-5 my-10  md:mx-10 lg:mx-40  ">
           <div className="flex flex-col items-center justify-center gap-4  md:flex-row md:justify-between py-10">
             <div className=''>
@@ -20,7 +20,7 @@ function Footer() {
             {/* Email Subscription-------------------------------------------------------------------------------------------------------- */}
             <div className='flex  items-center justify-center gap-2 md:flex-row'>
               <input type="email" placeholder='Enter your email' className='px-4 py-2 text-sm rounded-lg focus:outline-none bg-gray-500/30 text-white placeholder:text-gray-400 border border-gray-500 ' />
-              <button className='px-4 py-2 bg-secondary text-white hover:bg-hoverSecondary rounded-lg cursor-pointer '><span className='inline-flex items-center gap-3'><SiMinutemailer />Subscribe</span> </button>
+              <button className='px-4 py-2 bg-accent text-white hover:bg-secondary rounded-lg cursor-pointer '><span className='inline-flex items-center gap-3'><SiMinutemailer />Subscribe</span> </button>
             </div>
 
           </div>
@@ -41,12 +41,12 @@ function Footer() {
                 Quick Links
               </h3>
               <ul className="mt-4 space-y-2">
-                <li><a href="/" className="text-sm text-gray-400 hover:text-secondary">Destinations </a></li>
-                <li><a href="/cabanas" className="text-sm text-gray-400 hover:text-secondary">Tour Packages</a></li>
-                <li><a href="/gallery" className="text-sm text-gray-400 hover:text-secondary">Travel Blog</a></li>
-                <li><a href="/about" className="text-sm text-gray-400 hover:text-secondary">About Us</a></li>
-                <li><a href="/contact" className="text-sm text-gray-400 hover:text-secondary">Contact</a></li>
-                <li><a href="/contact" className="text-sm text-gray-400 hover:text-secondary">FAQ</a></li>
+                <li><a href="/" className="text-sm text-gray-400 hover:text-accent">Destinations </a></li>
+                <li><a href="/cabanas" className="text-sm text-gray-400 hover:text-accent">Tour Packages</a></li>
+                <li><a href="/gallery" className="text-sm text-gray-400 hover:text-accent">Travel Blog</a></li>
+                <li><a href="/about" className="text-sm text-gray-400 hover:text-accent">About Us</a></li>
+                <li><a href="/contact" className="text-sm text-gray-400 hover:text-accent">Contact</a></li>
+                <li><a href="/contact" className="text-sm text-gray-400 hover:text-accent">FAQ</a></li>
               </ul>
             </div>
 
@@ -55,12 +55,12 @@ function Footer() {
                 Travel Types
               </h3>
               <ul className="mt-4 space-y-2">
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Adventure Tours</Link></li>
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Honeymoon Packages</Link></li>
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Family Trips</Link></li>
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Corporate Travel</Link></li>
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Cruise Packages</Link></li>
-                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-secondary">Cultural Tours</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Adventure Tours</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Honeymoon Packages</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Family Trips</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Corporate Travel</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Cruise Packages</Link></li>
+                <li><Link href="/experiences" className="text-sm text-gray-400 hover:text-accent">Cultural Tours</Link></li>
               </ul>
             </div>
 
@@ -69,9 +69,9 @@ function Footer() {
                 Contact Us
               </h3>
               <ul className='mt-4 space-y-4'>
-                <li className="text-sm text-gray-400"><span className="inline-block mr-2 text-secondary "><HiOutlineLocationMarker /></span>123 Travel Avenue, Suite 500, New York</li>
-                <li className="mt-1 text-sm text-gray-400"><span className="inline-block mr-2 text-secondary"><BsTelephone /></span>+1 (800) 555-TRIP</li>
-                <li className="mt-1 text-sm text-gray-400"><span className="inline-block mr-2 text-secondary"><HiOutlineMail /></span>hello@wanderly.com</li>
+                <li className="text-sm text-gray-400"><span className="inline-block mr-2 text-accent "><HiOutlineLocationMarker /></span>123 Travel Avenue, Suite 500, New York</li>
+                <li className="mt-1 text-sm text-gray-400"><span className="inline-block mr-2 text-accent"><BsTelephone /></span>+1 (800) 555-TRIP</li>
+                <li className="mt-1 text-sm text-gray-400"><span className="inline-block mr-2 text-accent"><HiOutlineMail /></span>hello@wanderly.com</li>
               </ul>
             </div>
           </div>
