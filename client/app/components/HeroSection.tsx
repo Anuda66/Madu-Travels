@@ -68,14 +68,14 @@ function HeroSection() {
                             className={`absolute transition-opacity duration-1000 ease-in-out ${index === current ? "opacity-100" : "pointer-events-none opacity-0"
                                 }`}>
                             <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                                {slide.title} <br /> <span className='text-secondary'>{slide.title2}</span>
+                                {slide.title} <br /> <span className='text-accent'>{slide.title2}</span>
                             </h1>
                             <p className="mx-auto mt-4 max-w-xl text-base text-gray-200 sm:text-lg md:text-xl">
                                 {slide.tagline}
                             </p>
                             <div className='flex flex-row gap-3 items-center justify-center mt-6'>
-                                <p onClick={() => router.push('/booking')} className='px-4 py-2 bg-secondary text-white hover:bg-hoverSecondary rounded-lg cursor-pointer text-sm '>Explore Destinations</p>
-                                <p onClick={() => router.push('/booking')} className='px-4 py-2 rounded-lg cursor-pointer text-sm  text-white border border-gray-300 bg-gray-600/50 hover:bg-gray-300/10 backdrop-blur-sm'>View Packages</p>
+                                <p onClick={() => router.push('/booking')} className='px-4 py-2 bg-accent text-white hover:bg-secondary rounded-lg cursor-pointer text-sm '>Explore Destinations</p>
+                                <p onClick={() => router.push('/booking')} className='px-4 py-2 rounded-lg cursor-pointer text-sm  text-white border border-gray-300 bg-light_natural/50 hover:bg-gray-300/10 backdrop-blur-sm'>View Packages</p>
                             </div>
                         </div>
                     ))}
