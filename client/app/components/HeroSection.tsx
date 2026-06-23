@@ -58,7 +58,7 @@ function HeroSection() {
                 ))}
 
                 {/* Dark overlay for text readability------------------------------------------------------------------- */}
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-black/70" />
 
                 {/* Centered content — text changes with the background */}
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
@@ -86,9 +86,7 @@ function HeroSection() {
                     {slides.map((_, index) => (
                         <span
                             key={index}
-                            className={`h-1 w-1 rounded-full transition-all duration-300 ${index === current ? "w-4 bg-white" : "bg-white/50"
-                                }`}
-                        />
+                            className={`h-1 w-1 rounded-full transition-all duration-300 ${index === current ? "w-4 bg-white" : "bg-white/50"}`}/>
                     ))}
                 </div>
             </section>

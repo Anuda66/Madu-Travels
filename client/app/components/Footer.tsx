@@ -4,13 +4,15 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { SiMinutemailer } from "react-icons/si";
-
-
-
+import { IoLogoYoutube } from "react-icons/io";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaFacebookSquare } from "react-icons/fa";
+ 
 function Footer() {
   return (
     <div>
-      <footer className="-mb-10 bg-dark_neutral">
+      <footer className="-mb-10 bg-primary">
         <div className="py-12 mx-5 my-10  md:mx-10 lg:mx-40  ">
           <div className="flex flex-col items-center justify-center gap-4  md:flex-row md:justify-between py-10">
             <div className=''>
@@ -34,6 +36,12 @@ function Footer() {
               <p className="mt-4 text-sm text-gray-400">
                 Your trusted partner for unforgettable travel experiences around the world. Discover, explore, and create memories that last a lifetime.
               </p>
+              <div className='text-white  flex flex-row space-x-3 text-lg mt-5'>
+                <Link className='hover:text-accent' href={'/'}><FaFacebookSquare /></Link>
+                <Link className='hover:text-accent' href={'/'}><FaSquareInstagram /></Link>
+                <Link className='hover:text-accent' href={'/'}><IoLogoYoutube /></Link>
+                <Link className='hover:text-accent' href={'/'}><IoLogoLinkedin /></Link>
+              </div>
             </div>
 
             <div>
