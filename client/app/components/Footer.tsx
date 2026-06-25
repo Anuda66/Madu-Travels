@@ -90,12 +90,12 @@ function Footer() {
             <div>
               <p className=" text-center  text-sm font-light text-gray-300">
                 &copy; 2026 Madu Travels. All rights reserved.
-              </p>
+              </p> 
             </div>
             <div className='flex flex-row space-x-7 '>
-              <Link href="/terms" className=" text-gray-300 hover:text-white text-xs font-light">Terms & Conditions</Link>
-              <Link href="/privacy" className=" text-gray-300 hover:text-white text-xs font-light">Privacy Policy</Link>
-              <Link href="/refund" className=" text-gray-300 hover:text-white text-xs font-light">Refund Policy</Link>
+              <Link href="/Terms" className=" text-gray-300 hover:text-white text-xs font-light">Terms & Conditions</Link>
+              <Link href="/privecyPolicy" className=" text-gray-300 hover:text-white text-xs font-light">Privacy Policy</Link>
+              <Link href="/privecyPolicy" className=" text-gray-300 hover:text-white text-xs font-light">Refund Policy</Link>
             </div>
             <div>
               <p className=" text-center  text-sm font-light text-gray-300">Website Designed & Developed by <Link className='hover:text-accent' href={'https://www.flegoinnovation.com/'}>Flego Innovation</Link></p>
