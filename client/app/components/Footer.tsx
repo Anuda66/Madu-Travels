@@ -89,13 +89,16 @@ function Footer() {
           <div className="mt-8 space-y-4 text-center md:flex md:items-center md:justify-between md:space-y-0">
             <div>
               <p className=" text-center  text-sm font-light text-gray-300">
-                &copy; 2026 Flego Innovation. All rights reserved.
+                &copy; 2026 Madu Travels. All rights reserved.
               </p>
             </div>
             <div className='flex flex-row space-x-7 '>
               <Link href="/terms" className=" text-gray-300 hover:text-white text-xs font-light">Terms & Conditions</Link>
               <Link href="/privacy" className=" text-gray-300 hover:text-white text-xs font-light">Privacy Policy</Link>
               <Link href="/refund" className=" text-gray-300 hover:text-white text-xs font-light">Refund Policy</Link>
+            </div>
+            <div>
+              <p className=" text-center  text-sm font-light text-gray-300">Website Designed & Developed by <Link className='hover:text-accent' href={'https://www.flegoinnovation.com/'}>Flego Innovation</Link></p>
             </div>
           </div>
         </div>

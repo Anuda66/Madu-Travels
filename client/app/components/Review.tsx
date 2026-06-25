@@ -7,7 +7,6 @@ import Slider, { Settings } from "react-slick";
 import { FaRegStar } from "react-icons/fa";
 import { TiStarFullOutline } from "react-icons/ti";
 
-
 function Review() {
 
   const settings: Settings = {
