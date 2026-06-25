@@ -20,7 +20,7 @@ function Navbar() {
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 z-50 w-full transition-all duration-300  ${scrolled ? 'bg-light_natural/50 backdrop-blur-lg' : 'bg-transparent'}`}>
+        <div className={`fixed top-0 left-0 z-50 w-full transition-all duration-300  ${scrolled ? 'bg-primary/50 backdrop-blur-lg' : 'bg-transparent'}`}>
             <div className='mx-5  md:mx-10 lg:mx-40 '>
                 <div className="flex items-center justify-between py-4 m-2 text-sm ">
                     {/* App Logo------------------------------------------------------------------ */}

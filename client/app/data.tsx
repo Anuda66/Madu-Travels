@@ -1,4 +1,6 @@
-const reviews = [
+import { reviewType } from "./types";
+
+const reviews: reviewType[] = [
     {
         id: 1,
         name: "John Doe",
@@ -18,3 +20,5 @@ const reviews = [
         review: "The team was very professional and helpful. I felt safe and well taken care of throughout my journey."
     },
 ]
+
+export default reviews;
