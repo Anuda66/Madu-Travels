@@ -4,12 +4,18 @@ import { RiMenuUnfold4Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { usePathname } from "next/navigation"; 
+
 
 function Navbar() {
     // const navigate = useNavigate();
     const [showMenu, setShowMenu] = React.useState(false)
     const [scrolled, setScrolled] = React.useState(false)
     const router = useRouter()
+
+    const pathname = usePathname();
+    const isPrivacyPage = pathname === '/privecyPolicy' || pathname === '/Terms'; 
+    //console.log("pathname is:", pathname);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,39 +26,39 @@ function Navbar() {
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 z-50 w-full transition-all duration-300  ${scrolled ? 'bg-primary/50 backdrop-blur-lg' : 'bg-transparent'}`}>
+        <div className={`fixed top-0 left-0 z-50 w-full transition-all duration-300  ${scrolled ? 'bg-primary/50 backdrop-blur-lg' : 'bg-transparent' }`}>
             <div className='mx-5  md:mx-10 lg:mx-40 '>
                 <div className="flex items-center justify-between py-4 m-2 text-sm ">
                     {/* App Logo------------------------------------------------------------------ */}
                     <div>
-                        <p onClick={() => router.push('/')} className="text-3xl font-bold text-white cursor-pointer">Wanderly</p>
+                        <p onClick={() => router.push('/')} className={`text-3xl font-bold  cursor-pointer ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'} `: 'text-white'}`}>Madu Tours.</p>
                     </div>
                     <ul className="items-start hidden gap-5 font-medium md:flex">
                         <Link onClick={() => scrollTo(0, 0)} href={"/"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Home</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}>Home</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <Link onClick={() => scrollTo(0, 0)} href={"/cabanas"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Cabanas</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}>Cabanas</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <Link onClick={() => scrollTo(0, 0)} href={"/experiences"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Experiences</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}>Experiences</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/gallery"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">Gallery</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}>Gallery</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200 " />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/about"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50">About</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}>About</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200 " />
                         </Link>
 
                         <Link onClick={() => scrollTo(0, 0)} href={"/contact"}>
-                            <li className="py-1 text-white transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50"> Contact</li>
+                            <li className={ `py-1  transition duration-300 ease-in-out delay-150 hover:text-accent hover:-translate-y-1 hover:scale-110 hover:text-secondary-50 ${isPrivacyPage ? `text-primary ${scrolled ? 'text-white' : ' text-primary'}`: 'text-white'} `}> Contact</li>
                             <hr className="hidden w-3/5 h-1 m-auto border-none rounded-full outline-none bg-secondary-200" />
                         </Link>
                         <div>
