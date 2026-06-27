@@ -86,15 +86,15 @@ function Footer() {
 
           <hr className="border-gray-600 mt-10" />
 
-          <div className="mt-8 space-y-4 text-center md:flex md:items-center md:justify-between md:space-y-0">
+          <div className="mt-8 space-y-4 text-center md:flex md:items-center md:justify-between md:space-y-0  ">
             <div>
               <p className=" text-center  text-sm font-light text-gray-300">
                 &copy; 2026 Madu Travels. All rights reserved.
               </p> 
             </div>
-            <div className='flex flex-row space-x-7 '>
-              <Link href="/Terms" className=" text-gray-300 hover:text-white text-xs font-light">Terms & Conditions</Link>
-              <Link href="/privecyPolicy" className=" text-gray-300 hover:text-white text-xs font-light">Privacy Policy</Link>
+            <div className='flex flex-row space-x-5 md:space-x-4  justify-center'>
+              <Link href="/Terms" className=" text-gray-300 hover:text-white text-xs font-light">Terms & Conditions |</Link>
+              <Link href="/privecyPolicy" className=" text-gray-300 hover:text-white text-xs font-light">Privacy Policy |</Link>
               <Link href="/privecyPolicy" className=" text-gray-300 hover:text-white text-xs font-light">Refund Policy</Link>
             </div>
             <div>

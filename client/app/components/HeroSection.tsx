@@ -2,9 +2,9 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import cover1 from '../assets/cover1.jpg'
-import cover2 from '../assets/cover2.jpg'
-import cover3 from '../assets/cover3.jpg'
+import cover1 from '../assets/1.jpg'
+import cover2 from '../assets/2.jpg'
+import cover3 from '../assets/3.jpg'
 import { useRouter } from 'next/navigation';
 
 // Replace these with your own image paths (in /public) or remote URLs
@@ -58,7 +58,7 @@ function HeroSection() {
                 ))}
 
                 {/* Dark overlay for text readability------------------------------------------------------------------- */}
-                <div className="absolute inset-0 bg-black/70" />
+                <div className="absolute inset-0 bg-black/30" />
 
                 {/* Centered content — text changes with the background */}
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">

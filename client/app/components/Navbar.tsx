@@ -15,8 +15,7 @@ function Navbar() {
 
     const pathname = usePathname();
     const isPrivacyPage = pathname === '/privecyPolicy' || pathname === '/Terms'; 
-    //console.log("pathname is:", pathname);
-
+   
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 10);

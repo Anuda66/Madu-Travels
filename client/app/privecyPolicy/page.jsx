@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
     return (
-        <div className="py-12 mx-5 my-10  md:mx-10 lg:mx-40  ">
+        <div className="py-12 mx-5 my-10  md:mx-10 lg:mx-40">
             <div className='py-10'>
                 <h1 className='text-4xl text-center'> Madu Tours</h1>
                 <h1 className='text-5xl font-bold text-center'>Privacy Policy</h1>
